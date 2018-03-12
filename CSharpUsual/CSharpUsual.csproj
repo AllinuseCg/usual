@@ -58,7 +58,7 @@
     <Compile Include="BezierForm.Designer.cs">
       <DependentUpon>BezierForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Library\Bezier.cs" />
+    <Compile Include="Library\CubicBezier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Control\BezierViewer.resx">

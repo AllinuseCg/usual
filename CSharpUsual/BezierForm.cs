@@ -19,7 +19,7 @@ namespace CSharpUsual
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            bezierViewer.bezier = new usual.Bezier(new usual.Vector2d_simple(1, 0), new usual.Vector2d_simple(0, 1));
+            bezierViewer.bezier = new usual.CubicBezier(new usual.Vector2d_simple(1, 0), new usual.Vector2d_simple(0, 1));
         }
 
         private void posChanged(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace CSharpUsual
             {
                 Console.WriteLine("pos error : "+s.Message);
             }
-            bezierViewer.bezier = new usual.Bezier(new usual.Vector2d_simple(x1, y1), new usual.Vector2d_simple(x2, y2));
+            bezierViewer.bezier = new usual.CubicBezier(new usual.Vector2d_simple(x1, y1), new usual.Vector2d_simple(x2, y2));
 
 
         }

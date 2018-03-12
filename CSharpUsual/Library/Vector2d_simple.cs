@@ -34,7 +34,7 @@ namespace usual
         public static Vector2d_simple ClampInOne(Vector2d_simple p)
         {
             p.x = p.x <= 0 ? 0 : (p.x >= 1 ? 1 : p.x);
-            p.y = p.y <= 0 ? 0 : (p.y >= 1 ? 1 : p.y);
+            //p.y = p.y <= 0 ? 0 : (p.y >= 1 ? 1 : p.y);
             return p;
         }
 
