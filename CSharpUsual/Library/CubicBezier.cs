@@ -53,15 +53,18 @@ namespace usual
             return 3 * k * k * t * a + 3 * k * t * t * b + t * t * t;
         }
 
-        // t是时间，也是图形的x坐标，求y坐标
-        public float getYByX(float t)
-        {
-            return (t + 3 * B.x * t * t - 3 * A.x * t) * (1 - 3 * A.y - 3 * B.y) / (1 - 3 * A.x - 3 * B.x) + 3 * A.y * t - 3 * B.y * t * t;
-        }
+        // t是时间，也是图形的x坐标，求y坐标？？？我已经不记得这是干嘛的了
+        //public float getYByX(float t)
+        //{
+        //    return (t + 3 * B.x * t * t - 3 * A.x * t) * (1 - 3 * A.y - 3 * B.y) / (1 - 3 * A.x - 3 * B.x) + 3 * A.y * t - 3 * B.y * t * t;
+        //}
 
-        public Vector2d_simple getPointByX(float x)
+        /// <summary>
+        /// 最主要的方法，用x求y
+        /// </summary>
+        public float getYByX(float x)
         {
-            return new Vector2d_simple(x, getPointbyAlpha_2num(judgeAlphaByX(x), A.y, B.y));
+            return getPointbyAlpha_2num(judgeAlphaByX(x), A.y, B.y);
         }
 
         // 二分法求在f(x)处近似的alpha值
